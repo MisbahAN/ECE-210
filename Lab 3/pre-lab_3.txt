@@ -1,0 +1,44 @@
+architecture Behavioral of majority is
+begin
+    output_A <= (not m_input(1) and m_input(3)) or 
+                (not m_input(0) and not m_input(3) and not m_input(2)) or 
+                (m_input(1) and not m_input(0) and m_input(2)) or 
+                (m_input(1) and m_input(0) and not m_input(2));
+
+    output_B <= (not m_input(0) and not m_input(2)) or 
+                (m_input(3) and m_input(2)) or 
+                (m_input(1) and not m_input(0)) or 
+                (m_input(1) and m_input(3));
+
+    output_C <= (not m_input(1) and not m_input(0)) or 
+                (not m_input(0) and m_input(2)) or 
+                (m_input(3) and not m_input(2)) or 
+                (m_input(1) and m_input(3)) or
+                (not m_input(1) and not m_input(3) and m_input(2));
+
+    output_D <= (not m_input(0) and not m_input(2)) or 
+                (not m_input(0) and m_input(3)) or 
+                (m_input(1) and not m_input(3)) or 
+                (m_input(1) and m_input(2)) or 
+                (not m_input(1) and m_input(3) and not m_input(2)) or 
+                (m_input(0) and not m_input(3) and m_input(2));
+
+    output_E <= (not m_input(1) and not m_input(2)) or 
+                (not m_input(0) and not m_input(2)) or 
+                (not m_input(1) and not m_input(0) and not m_input(3)) or 
+                (not m_input(1) and m_input(0) and m_input(3)) or 
+                (m_input(1) and m_input(0) and not m_input(3));
+
+    output_F <= (not m_input(1) and not m_input(3)) or 
+                (not m_input(3) and  m_input(2)) or 
+                (m_input(3) and not m_input(2)) or 
+                (not m_input(1) and m_input(0)) or 
+                (m_input(0) and not m_input(3));
+
+    output_G <= (m_input(3) and not m_input(2)) or 
+                (m_input(0) and m_input(3)) or 
+                (m_input(1) and not m_input(0)) or 
+                (m_input(1) and not m_input(2)) or 
+                (not m_input(1) and not m_input(3) and m_input(2));
+
+end Behavioral;
