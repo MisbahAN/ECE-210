@@ -29,9 +29,8 @@ Each folder in this repository contains:
 | Lab 0      | Introduction to Vivado and FPGA         | Completed    |
 | Lab 1      | Simple AND-OR-NOT Circuits              | Completed    |
 | Lab 2      | Combinational Logic and Karnaugh Maps   | Completed    |
-| Lab 3      | Sequential Logic Circuits               | _To be added_ |
-
-Further labs will be added upon completion.
+| Lab 3      | 7-Segment LED Decoder                   | Completed    |
+| Lab 4      | Traffic Intersection Controller         | Completed    |
 
 ## Notes
 This repository serves as a record of my ECE 210 lab work and provides insight into digital logic design concepts. Each report contains analysis and results for easy reference.
